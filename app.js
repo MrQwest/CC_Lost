@@ -1,5 +1,6 @@
 (function() {
 
+	// setting paths
 	var paths = {
 		'default': 'home',
 		'location': 'view',
@@ -10,6 +11,7 @@
 		content: document.querySelector('#content')
 	};
 
+	// route setup
 	var routes = {
 		home: function() {
 			var source = document.querySelector('#start-template').innerHTML,
@@ -31,12 +33,15 @@
 					// Croydon Creatives Location
 					var ccLoc = new google.maps.LatLng(51.3724092,-0.1014937);
 
+					// Marker to show the user
 					var marker = new google.maps.Marker({
 						position: pos,
 						map: map,
 						title: 'Found you!'
 					});
+					// marker to show the CroydonCreatives
 					var ccMarker = new google.maps.Marker({
+						// ccloc is co-ords for CC as line 34
 						position: ccLoc,
 						map: map,
 						icon: "img/cc_drop.png",
@@ -52,6 +57,7 @@
 				handleNoGeolocation(false);
 			}
 
+			// #todo swap 'them' to ccloc as values are the same
 			window.directionsDisplay = new google.maps.DirectionsRenderer();
 			var them = new google.maps.LatLng(51.3724092,-0.1014937);
 			var mapOptions = {
