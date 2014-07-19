@@ -68,7 +68,8 @@
 			window.marker = new google.maps.Marker({
 				position: them,
 				map: window.map,
-				title: 'Your friend!'
+				icon: "img/cc_drop.png",
+				title: 'CroydonCreatives'
 			});
 			window.directionsDisplay.setMap(window.map);
 		}
