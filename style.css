@@ -338,8 +338,12 @@ footer {
 }
 
 footer a {
-	color: #85C5DF;
+	color: #222;
 	text-shadow: 0 1px 0 rgba(255,255,255,.7);
+}
+
+footer img {
+    padding-top: 1rem;
 }
 
 .share-message {
