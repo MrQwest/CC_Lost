@@ -31,53 +31,15 @@
 
 <script id="start-template" type="text/x-handlebars-template">
 	<div class="share-message group">
-		<p>Heading to <a href="http://croydoncreativ.es" title="Croydon Creatives">Croydon Creativ.es</a> but a little lost? Let's route you there!</p>
+		<p>Heading to <a href="http://croydoncreativ.es" title="Croydon Creatives">Croydon Creativ.es</a> but a little lost? Let's get you there!</p>
 	</div>
 	<div id="map">
 		<div class="loader"></div>
-	</div>
-	<div class="button-wrap group">
-		<a class="btn foundicon-location" href="#share">share your location with them</a>
-
-	</div>
-	<div class="button-wrap group">
-		<a class="btn foundicon-location" id="addMapUser" href="">route yourself to CC</a>
-	</div>
-</script>
-
-<script id="share-template" type="text/x-handlebars-template">
-	<div id="map">
-		<div class="loader"></div>
-	</div>
-
-	<div class="sharing-links" hidden>
-		<div class="share-message group">
-			Share your location
-		</div>
-		<input type="text" id="link" />
-
-		<div class="button-wrap">
-			<a class="btn foundiconsocial-twitter" id="tweet-loc" href="https://twitter.com/intent/tweet?text=I'm here!&amp;url=||RESULT||" target="_BLANK">tweet</a>
-
-			<a class="btn foundicon-mail" id="email-loc" href="mailto:?subject=iHi&body=I'm here: ||RESULT||">email</a>
-		</div>
 	</div>
 </script>
 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
-<script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34277638-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </body>
 </html>
